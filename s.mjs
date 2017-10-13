@@ -6,9 +6,9 @@ const PORT=4321,
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET,POST,DELETE',
         'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers'
-      };
+      }
+;
 
-const PORT=4321;
 express()
   .use(express.static('public'))
   .get('/author', r=>r.res.set(CORS).send('Владислав Ковеченков'))
